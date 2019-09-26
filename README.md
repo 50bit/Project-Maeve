@@ -1,2 +1,2 @@
 # Project-Maeve
-Project maeve is just a simple scheduling assistant linked with facebook messanger  
+Scheduling assistant linked with facebook messanger  built with nodeJs ,expressJS and mongoDB
