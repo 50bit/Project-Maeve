@@ -1,0 +1,111 @@
+{{!-- <header class="masthead mb-auto">
+    <div class="inner">
+        <h3 class="masthead-brand">Maeve</h3>
+        <nav class="nav nav-masthead justify-content-center">
+        <a class="nav-link active" href="/">Home</a>
+        {{#if user}}
+        
+        <a class="nav-link" href="/users/logout">Logout</a>
+        <a class="nav-link" href="/calendar">Calendar</a>
+        {{else}}
+        <a class="nav-link" href="/users/login">Login</a>
+        <a class="nav-link" href="/users/register">Register</a>
+        <a class="nav-link" href="/users/calendar">Calendar</a>
+        {{/if}}
+        </nav>
+    </div>
+</header> --}}
+
+<nav class="container navbar navbar-expand-lg  index">
+        
+    <span class="navbar-text mr-auto">
+        
+        {{#if success_msg}}
+            <span class="success"><i>i</i> {{success_msg}}</span>
+        {{/if}}
+
+        {{#if error_msg}}
+            <span class="err"><i>i</i> {{error_msg}}</span>
+            
+        {{/if}}
+
+        {{#if error}}
+            <span class="err"><i>i</i> {{error}}</span>
+        {{/if}}
+
+        {{#if db_duplicates}}
+            <span class="err"><i>i</i> {{db_duplicates}}</span>
+        {{/if}}
+
+        {{#if errors}}
+            <span class="err"><i>i</i> Please Submit Valid Information</span>
+            
+        {{/if}}
+
+        
+    </span>
+    
+  
+    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <ul class="navbar-nav ml-auto mt-3 mt-lg-3">
+
+            {{#if user}}
+            <li class="nav-item active ml-auto home">
+                <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+            </li>
+            {{!-- <li class="nav-item ml-auto ">
+                <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item ml-auto contact">
+                <a class="nav-link" href="#contact">Contact</a>
+            </li> --}}
+
+            <li class="nav-item ml-auto calendar">
+                <a class="nav-link" href="/calendar">Calendar</a>
+            </li>
+
+            <li class="dropdown">
+                <a class="btn dropdown-toggle dropDown" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    {{user.username}}
+                </a>
+
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    {{!-- <a class="dropdown-item" href="/calendar">Calendar</a> --}}
+                    <a class="dropdown-item" href="/users/logout">Log out</a>
+                </div>
+            </li>
+
+
+            {{!-- <li class="nav-item ml-auto calendar">
+                <a class="nav-link" href="/calendar">Calendar</a>
+            </li>
+            <li class="nav-item ml-auto logout">
+                <a class="nav-link" href="/users/logout">Log out</a>
+            </li> --}}
+
+            {{else}}
+            <li class="nav-item ml-auto home" >
+                <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+            </li>
+            {{!-- <li class="nav-item ml-auto" >
+                <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item ml-auto contact" >
+                <a class="nav-link" href="#">Contact</a>
+            </li> --}}
+            <li class="nav-item ml-auto login" >
+                <a class="nav-link" href="/users/login">Login</a>
+            </li>
+            <li class="nav-item ml-auto register" >
+                <a class="nav-link" href="/users/register">Register</a>
+            </li>
+            {{/if}}
+        
+        </ul>
+    </div>
+    
+    
+</nav>
