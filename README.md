@@ -4,11 +4,13 @@
 
 # Screenshots
 
-![alt text](https://github.com/50bit/Project-Maeve/blob/master/Screenshots/screencapture-localhost-3000-2018-10-05-21_50_29.png)
+<img src="https://github.com/50bit/Project-Maeve/blob/master/Screenshots/screencapture-localhost-3000-2018-10-05-21_50_29.png" width="200" align="left"> 
 
 
-![alt text](https://github.com/50bit/Project-Maeve/blob/master/Screenshots/screencapture-localhost-3000-users-login-2019-09-27-21_39_07.png)
+<img src="https://github.com/50bit/Project-Maeve/blob/master/Screenshots/screencapture-localhost-3000-users-login-2019-09-27-21_39_07.png" width="600" align="right" >
 
 
-![alt text](https://github.com/50bit/Project-Maeve/blob/master/Screenshots/41646990_880599242135942_6157324480583565312_n.png)
+<img src="https://github.com/50bit/Project-Maeve/blob/master/Screenshots/41646990_880599242135942_6157324480583565312_n.png" width="600" align="right">
+
+
 
